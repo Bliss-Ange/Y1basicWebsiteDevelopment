@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<link rel="stylesheet" href="Layout.Home.css"/>
+<link rel="stylesheet" href="Media.Home.css"/>
+<link rel="icon" type="image/png" href="../Pic/logo.png"/>
+<title>Home</title>
+</head>
+
+<body>
+       
+<!-- Header================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+      	<div class="logo">
+      		<img src="../Pic/Finallogo.gif"/>-
+      	</div>
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#nav-wrap" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a href="../Home/HomePage.html">Home</a></li>
+            <li><a href="../About Us/About.html">About▼</a> 
+            	<ul>
+				<li><a href="../Profile/Profile.html">Profile</a></li>
+				</ul>
+				</li>
+	         <li><a href="../Insight/Insight.html">Insight</a></li>
+            <li><a href="../Fortune Cookie/FortuneCookie.html">Draw</a></li>
+            <li><a href="../Event/event.html">Events▼</a>
+            <ul>
+            	<li><a href="../Countdown/countdown.html">Current</a></li>
+				<li><a href="../Previous/previous.html">Previous</a></li>
+				</ul>
+				</li>
+            
+            <li><a href="../JoinUs/JoinUs.html">Join Us</a></li>
+            <li><a href="../Contact Us/ContactUs.html">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+		<div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">AAC</h1>
+            <p>Hello,  <span id="demo"></span> !</p>
+            <p/>
+            <script>
+			var name;
+			name = prompt("What is your name?", "Your Name");
+			
+			document.getElementById("demo").innerHTML = name;
+			</script>	 
+			        
+            <h3>APU Astronomy Club(AAC) is a platform for astronomy enthusiasts to learn and communicate. 
+            Through various forms, it organizes star-gazing, 
+            promotes science and culture, popularizes astronomical knowledge, enriches students' campus life, 
+            and enhances students' interest in astronomy and astronomical knowledge. 
+            
+            Let's explore more about us with <a href="../About Us/About.html">about me</a>.</h3>
+            
+            
+         </div>
+      </div>
+      
+      <!--do the layout-->
+     <footer>
+	<p>©Copyright 2014-2019 by AAC. All rights reversed.</p>
+  	</footer>
+
+   </header> 
+  
+</body>
+
+</html>

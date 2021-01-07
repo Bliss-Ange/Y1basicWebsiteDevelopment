@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<link rel="stylesheet" href="Layout.event.css"/>
+<link rel="stylesheet" href="Media.event.css"/>
+
+<link rel="icon" type="image/png" href="../Pic/logo.png"/>
+<title>event and activities</title>
+</head>
+
+<body>
+
+<!-- Header================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+      	<div class="logo">
+      		<img src="../Pic/Finallogo.gif"/>
+      	</div>
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="../Home/HomePage.html">Home</a></li>
+            <li><a href="../About Us/About.html">About▼</a> 
+            	<ul>
+				<li><a href="../Profile/Profile.html">Profile</a></li>
+				</ul>
+				</li>
+	         <li><a href="../Insight/Insight.html">Insight</a></li>
+            <li><a href="../Fortune Cookie/FortuneCookie.html">Draw</a></li>
+            <li class="current"><a href="../Event/event.html">Events▼</a>
+            <ul>
+            	<li><a href="../Countdown/countdown.html">Current</a></li>
+				<li><a href="../Previous/previous.html">Previous</a></li>
+				</ul>
+				</li>
+            
+            <li><a href="../JoinUs/JoinUs.html">Join Us</a></li>
+            <li><a href="../Contact Us/ContactUs.html">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+   </header> 
+   
+<!--event-->
+<div class="wrapper">
+	<button class="collapsible"> 12/4/2019 </button>
+	<div class="content">
+	  <p>Meteor Shower</p>
+	  <br/>
+	  <p>The Lyrid meteor shower passes by Earth every year around April 16-25. 
+	  This year the peak is expected to be shortly before dawn on April 23rd. 
+	  Sadly, bright light from the Moon will drown all but the very brightest meteors this year.</p>
+	</div>
+	
+	<button class="collapsible"> 14/6/2019 </button>
+	<div class="content">
+	  <p>Seminar - Tour of the Universe</p>
+	  <br/>
+	  <p>Rocket through space and sail among billions of stars and galaxies. 
+	  Utilizing some amazing simulation software Dean Regas guides you through the mind-boggling scale of the universe. 
+	  Along the way you’ll stop at the Moon and individual planets. 
+	  Then you’ll make the jump to light speed and head to interstellar space and see all the galaxies in the universe. 
+	  Don’t worry, he’ll have you back home in time for bed. </p>
+	</div>
+	
+	<button class="collapsible"> 7/7/2019 </button>
+	<div class="content">
+	  <p>Mercury at Greatest Eastern Elongation</p>
+	  <br/>
+	  <p>Look for the planet Mercury low above the western horizon after sunset on June 23; 
+	  binoculars and an unobstructed  view will certainly help! 
+	  Low as it is, this is still the the highest position that Mercury can be spotted for 2019.</p>
+	</div>
+
+	<button class="collapsible"> 6/9/2019 </button>
+	<div class="content">
+	  <p>Jupiter Opposition</p>
+	  <br/>
+	  <p>Earth will be between Jupiter and the Sun on June 10, meaning Jupiter is at opposition. On that date, 
+	  Jupiter rises in the east as the Sun sets in the west, remaining visible the entire night. 
+	  Jupiter will be one of the brightest objects in the night sky, shining at magnitude -2.6. 
+	  Its four largest moons and cloud bands are easily spotted with even a small telescope.</p>
+	</div>
+	
+	<button class="collapsible"> 7/12/2019 </button>
+	<div class="content">
+	  <p>Seminar - Shadow</p>
+	  <br/>
+	  <p>This webinar will introduce the great activities and other resources in the Shadows and Silhouettes outreach toolkit.  
+	  With the upcoming total lunar eclipse on the evening of January 20, 
+	  this is a great time to help visitors at your outreach events better understand eclipses.</p>
+	</div>
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    
+    var contents = document.querySelectorAll('div.content')
+    contents.forEach((content) => {
+    	content.style.display = "none"
+    })
+    
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+
+</html>

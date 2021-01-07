@@ -1,0 +1,54 @@
+﻿header{
+   position: relative;
+   height: 100%;
+   min-height: 500px;
+   width: 100%;
+   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url('../Picture/ab1.jpg');
+   text-align: center;
+}
+
+.members{
+margin-top:10%;
+}
+
+h2{
+	text-align:center;
+	color:white;
+	padding-bottom:25%;
+	padding:10px;
+}
+
+h4{
+	padding 30px;
+	margin:auto;
+	color: white;	
+}
+
+a{
+	color:white;
+
+}
+
+p{
+	color:white;
+	padding-left:20px;
+	font-family: 'Cute Font', cursive;
+	font-size:15px
+}
+
+.mapouter {
+position:relative;
+text-align:center;
+height:500px;
+width:600px;
+margin-left:auto;
+margin-right:auto;
+}.
+
+.gmap_canvas {
+overflow:hidden;
+text-align:center;
+background:none;
+height:500px;
+width:600px;}
+     }

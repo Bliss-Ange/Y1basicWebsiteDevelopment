@@ -1,0 +1,143 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+
+.logo img{
+	float:left;
+	width:120px;
+	height:auto;
+	margin-left:28px;
+	margin-top:28px;
+	
+}
+
+header {
+   position: relative;
+   height: 100vh;
+   min-height: 500px;
+   width: 100%;
+   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url('../Pic/DSC100532578.jpg');
+   text-align: center;
+}
+
+/* vertically center banner section */
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align:middle;
+   height: 100%;
+}
+header .banner {
+   display: inline-block;
+   vertical-align: middle;
+   width: 80%;
+   padding-bottom: 30px;
+   text-align: center;
+}
+
+header .banner-text { width: 100%; }
+header .banner-text h1 {
+  	font: 90px 'opensans-bold', sans-serif;
+	color: #fff;
+	letter-spacing: -2px;
+	margin: 0 auto 18px auto;
+}
+
+header .banner-text p{
+	font:30px 'librebaskerville-regular', sans-serif;
+	color:white;
+
+	margin-bottom:10px;
+}
+
+header .banner-text h3 {
+   font: 18px 'librebaskerville-regular', sans-serif;
+   color: #bcbabb;
+   margin: 0 auto;
+   width: 68%;
+   line-height:30px;
+}
+
+header .banner-text h3 a {
+   color: #fff;
+   font:17.5px 'librebaskerville-regular', sans-serif;
+   text-transform: uppercase;
+}
+
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin-top: 20px;
+	 padding: 1px;
+	 border: none;
+	 outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 1;
+   position: fixed;
+   left: 0;
+   top: 0;
+}
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 18px;
+   display: inline-block;
+}
+
+
+
+/* Links */
+ul#nav li a{
+	text-decoration:none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparant;
+	transition: 0.25s linear;
+	border-radius:30px;
+}
+
+ul#nav li a:hover{
+	background-color: white;
+	color: black;
+}
+
+ul#nav li.current a {background-color:white; color: black; }
+
+/*drop*/
+ul#nav  li ul {
+	padding:0px;
+	position:absolute;
+	top: 0px;
+	left:15px;
+	display:none;
+	visibility:hidden;
+
+}
+
+
+
+ul#nav  li:hover ul{
+	display:block;
+	opacity:1;
+	visibility:visible;
+}

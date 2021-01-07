@@ -1,0 +1,199 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+
+.logo img{
+	float:left;
+	width:120px;
+	height:auto;
+	margin-left:28px;
+	margin-top:28px;
+	
+}
+
+header {
+   position: relative;
+   height: 100vh;
+   min-height: 500px;
+   width: 100%;
+   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url('../Pic/1823514.jpg');
+   text-align: center;
+   background-image:
+
+}
+
+/* vertically center banner section */
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align:middle;
+   height: 100%;
+}
+
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin-top: 20px;
+	 padding: 1px;
+	 border: none;
+	 outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 1;
+   position: fixed;
+   left: 0;
+   top: 0;
+}
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 18px;
+   display: inline-block;
+}
+
+
+
+/* Links */
+ul#nav li a{
+	text-decoration:none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparant;
+	transition: 0.25s linear;
+	border-radius:30px;
+}
+
+ul#nav li a:hover{
+	background-color: white;
+	color: black;
+}
+
+ul#nav li.current a {background-color:white; color: black; }
+
+/*drop*/
+ul#nav  li ul {
+	padding:0px;
+	position:absolute;
+	top: 0px;
+	left:15px;
+	display:none;
+	visibility:hidden;
+
+}
+
+
+
+ul#nav  li:hover ul{
+	display:block;
+	opacity:1;
+	visibility:visible;
+}
+
+/*End*/
+
+header .team-section {
+   display: inline-block;
+   vertical-align: middle;
+   width: 80%;
+   padding-bottom: 30px;
+   text-align: center;
+}
+
+
+header .team-section h1{
+	text-transform:uppercase;
+	margin-bottom:3px;
+	color:white;
+	font-size:40px;
+	padding:10px;
+	text-align:center;
+}
+
+header .border{
+	display:block;
+	margin:auto;
+	width:160px;
+	height: 3px;
+	background: #3498db;
+	margin-bottom: 30px;
+}
+
+header .ps{
+	position:relative;
+	text-align:center;
+}
+
+header .ps a{
+	display: inline-block;
+	margin: 0 30px;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-bottom:50px;
+}
+
+/*The filter property is not supported in Internet Explorer, Edge 12, or Safari 5.1 and earlier.*/
+header .ps a img{
+	width:100%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: 0.4s all;
+}
+
+header .ps a:hover > img{
+	filter: none;
+	-webkit-filter: none;
+}
+
+header .section{
+	width:600px;
+	margin:auto;
+	font-size:20px;
+	color:white;
+	text-align:center;
+	height: 0;
+	overflow:hidden;
+	position:relative;
+
+}
+
+
+header .section:target{
+	height:auto;	
+}
+
+header .name{
+	display:block;
+	margin-bottom:1px;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:22px;
+
+}
+
+header .section p{
+	font-size:20px;
+	color:#cecacc
+;
+}
+

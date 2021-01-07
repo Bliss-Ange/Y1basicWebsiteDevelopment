@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<link rel="stylesheet" href="Layout.Insight.css"/>
+<link rel="stylesheet" href="Media.Insight.css"/>
+<script src="Insight.js"></script>
+<link rel="icon" type="image/png" href="../Pic/logo.png"/>
+
+<title>Insight</title>
+</head>
+
+<body>
+ <!-- Header================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+      	<div class="logo">
+      		<img src="../Pic/Finallogo.gif"/>
+      	</div>
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="../Home/HomePage.html">Home</a></li>
+            <li><a href="../About Us/About.html">About▼</a> 
+            	<ul>
+				<li><a href="../Profile/Profile.html">Profile</a></li>
+				</ul>
+				</li>
+	         <li class="current"><a href="../Insight/Insight.html">Insight</a></li>
+            <li><a href="../Fortune Cookie/FortuneCookie.html">Draw</a></li>
+            <li><a href="../Event/event.html">Events▼</a>
+            <ul>
+            	<li><a href="../Countdown/countdown.html">Current</a></li>
+				<li><a href="../Previous/previous.html">Previous</a></li>
+				</ul>
+				</li>
+            
+            <li><a href="../JoinUs/JoinUs.html">Join Us</a></li>
+            <li><a href="../Contact Us/ContactUs.html">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+
+ <div class="container">
+   <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="exoplanet.jpg" width="800px" height="400px"/>
+      <div class="content">
+    	<h2>"Forbidden Planet" in Neptunian Desert</h2>
+    	<p>Astronomers have used a desert-based observatory to identify an exoplanet that falls in the middle of what scientists had dubbed the Neptunian Desert.
+ 		The newly discovered planet is formally known as NGTS-4b but nicknamed "The Forbidden Planet" for its supposed implausibility.
+ 		The size is three time bigger than the Earth.</p>
+  		</div>
+  	</div>
+    <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="bluemoon.jpg" width="550px" height="400px"/>
+      <div class="content">
+    	<h2>Blue Moon</h2>
+    	<p>The next Blue Moon will come on October 31, 2020.
+ 		It will be called a Blue Moon because it’s the second of two full moons to occur in a single calendar month.</p>
+  		</div>
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="redmoon.jpg" width="550px" height="400px"/>
+      <div class="content">
+    	<h2>Red Moon</h2>
+    	<p>The next Red Moon will come on May 26, 2021 at North America, South America, Asia, Australia and the Pacific.
+ 		It also known as Blood Moon. Red Moon is a full moon nearly always appears coppery red during a total lunar eclipse.
+ 		That's because the dispersed light from all the Earth's sunrises and sunsets falls on the face of the moon at mid-eclipse.</p>
+  		</div>
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="pinkplanet.jpg" width="470px" height="400px"/>
+      <div class="content">
+    	<h2>Pink Planet</h2>
+    	<p>Named GJ 504b, the planet is made of pink gas. It’s similar to Jupiter, a giant gas planet in our own solar system.
+ 		But GJ 504b is four times more massive. The planet you’re looking for is 4.65 billion miles away from its sun. Almost no light reaches it.</p>
+  		</div>
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="700tsun.jpg" width="800px" height="400px"/>
+      <div class="content">
+    	<h2>700 Trillion Suns</h2>
+    	<p>This newly observed object is known officially as SMSS J215728.21-360215 found on May of 2018.
+ 		This black hole is growing so rapidly that it’s as luminous as 700 trillion suns,
+ 		shining thousands of times more brightly than an entire galaxy due to all of the gases it sucks in daily that cause lots of friction and heat.</p>
+  		</div>
+  </div>
+  
+     <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="quasar.jpg" width="800px" height="400px"/>
+      <div class="content">
+    	<h2>Quasar</h2>
+    	<p>Quasars are distant objects powered by black holes a billion times as massive as our sun.
+    	It is known as the brightest object in our universe that they eclipse the ancient galaxies that contain them.</p>
+  		</div>
+  </div>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="exoplanet.jpg" style="width:100%" onclick="currentSlide(1)"/>
+    </div>
+    <div class="column"> 
+      <img class="demo cursor" src="bluemoon.jpg" style="width:100%" onclick="currentSlide(2)"/>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="redmoon.jpg" style="width:100%" onclick="currentSlide(3)"/>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pinkplanet.jpg" style="width:100%" onclick="currentSlide(4)"/>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="700tsun.jpg" style="width:100%" onclick="currentSlide(5)"/>
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="quasar.jpg" style="width:100%" onclick="currentSlide(6)"/>
+    </div> 
+
+	</div>
+
+</div>
+</nav> <!-- end #nav-wrap -->
+</header> 
+</body>
+
+</html>

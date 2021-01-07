@@ -1,0 +1,190 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+
+.logo img{
+	float:left;
+	width:120px;
+	height:auto;
+	margin-left:28px;
+	margin-top:28px;
+	
+}
+
+header {
+   position: relative;
+   height: 100vh;
+   min-height: 500px;
+   width: 100%;
+   background-color:black;
+   text-align: center;
+}
+
+/* vertically center banner section */
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align:middle;
+   height: 100%;
+}
+header .banner {
+   display: inline-block;
+   vertical-align: middle;
+   width: 80%;
+   padding-bottom: 30px;
+   text-align: center;
+}
+
+
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin-top: 20px;
+	 padding: 1px;
+	 border: none;
+	 outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 1;
+   position: fixed;
+   left: 0;
+   top: 0;
+}
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 18px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a{
+	text-decoration:none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparant;
+	transition: 0.25s linear;
+	border-radius:30px;
+}
+
+ul#nav li a:hover{
+	background-color: white;
+	color: black;
+}
+
+ul#nav li.current a {background-color:white; color: black; }
+
+
+
+/*drop*/
+ul#nav  li ul {
+	padding:0px;
+	position:absolute;
+	top: 0px;
+	left:15px;
+	display:none;
+	visibility:hidden;
+
+}
+
+
+
+ul#nav  li:hover ul{
+	display:block;
+	opacity:1;
+	visibility:visible;
+}
+
+/*End*/
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 33%; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
